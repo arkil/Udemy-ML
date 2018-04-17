@@ -30,6 +30,10 @@ logReg.fit(x_train,y_train)
 
 y_pred = logReg.predict(x_test)
 
+from sklearn.metrics import confusion_matrix
+
+confusionmatrix =confusion_matrix(y_test,y_pred)
+
 from matplotlib.colors import ListedColormap
 X_set, y_set = x_train, y_train
 X1, X2 = np.meshgrid(np.arange(start = X_set[:, 0].min() - 1, stop = X_set[:, 0].max() + 1, step = 0.01),
