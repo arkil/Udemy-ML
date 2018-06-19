@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 import pandas as pd
 
 
-dataset = pd.read_csv('Salary_Data.csv')
+dataset = pd.read_csv('E:\git\Udemy-ML\Linear Regression lab\Salary_Data.csv')
 x = dataset.iloc[:, :-1].values
 y = dataset.iloc[:, 1].values
 
